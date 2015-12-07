@@ -17,63 +17,219 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-6l-hdk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Answer1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="78" y="285" width="238" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clickAnswer1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iai-Wy-6H3"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTs-7J-t3d">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Answer2"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Answer2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="167" y="345" width="67" height="30"/>
+                                    <rect key="frame" x="78" y="347" width="238" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="clickAnswer2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5K-DE-6YC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jv-P0-Wpb">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Answer3"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Answer3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="167" y="406" width="67" height="30"/>
+                                    <rect key="frame" x="78" y="406" width="238" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="clickAnswer3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6s-pM-nAC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIV-36-5SW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Answer4"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Answer4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="167" y="466" width="67" height="30"/>
+                                    <rect key="frame" x="78" y="466" width="238" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="clickAnswer4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6a-gY-01w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sq-IH-9Nv">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="Start"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="45"/>
+                                <state key="normal" title="Start Quiz!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="66" width="216" height="70"/>
+                                    <rect key="frame" x="57" y="66" width="280" height="70"/>
                                 </variation>
+                                <connections>
+                                    <action selector="startQuiz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffz-AT-Y4w"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-6l-hdk">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Answer1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV5-t2-rwI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="167" y="285" width="67" height="30"/>
+                                    <rect key="frame" x="48" y="37" width="51" height="21"/>
                                 </variation>
-                            </button>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-kR-qsW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="37" width="76" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="難易度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2R-ZI-Wws">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="31" y="66" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiP-sW-F9g">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="66" width="268" height="21"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Question" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uvL-w3-ODf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="46" y="107" width="308" height="149"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おつかれさまでした" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2u-CD-7je">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="291" width="360" height="69"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正答数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-Qq-Jcb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="406" width="355" height="52"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNT-aw-JKx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="295" y="274" width="52" height="52"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQd-gh-AIo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="295" y="395" width="52" height="52"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTM-lL-Htv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="295" y="455" width="52" height="52"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LsQ-Id-zV0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="295" y="336" width="52" height="52"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="cyt-6l-hdk"/>
                                 <exclude reference="TTs-7J-t3d"/>
                                 <exclude reference="8jv-P0-Wpb"/>
                                 <exclude reference="WIV-36-5SW"/>
                                 <exclude reference="9Sq-IH-9Nv"/>
-                                <exclude reference="cyt-6l-hdk"/>
+                                <exclude reference="rV5-t2-rwI"/>
+                                <exclude reference="Bwv-kR-qsW"/>
+                                <exclude reference="X2R-ZI-Wws"/>
+                                <exclude reference="AiP-sW-F9g"/>
+                                <exclude reference="uvL-w3-ODf"/>
+                                <exclude reference="x2u-CD-7je"/>
+                                <exclude reference="XqS-Qq-Jcb"/>
+                                <exclude reference="vNT-aw-JKx"/>
+                                <exclude reference="ZQd-gh-AIo"/>
+                                <exclude reference="BTM-lL-Htv"/>
+                                <exclude reference="LsQ-Id-zV0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="cyt-6l-hdk"/>
                                 <include reference="TTs-7J-t3d"/>
                                 <include reference="8jv-P0-Wpb"/>
                                 <include reference="WIV-36-5SW"/>
                                 <include reference="9Sq-IH-9Nv"/>
-                                <include reference="cyt-6l-hdk"/>
+                                <include reference="rV5-t2-rwI"/>
+                                <include reference="Bwv-kR-qsW"/>
+                                <include reference="X2R-ZI-Wws"/>
+                                <include reference="AiP-sW-F9g"/>
+                                <include reference="uvL-w3-ODf"/>
+                                <include reference="x2u-CD-7je"/>
+                                <include reference="XqS-Qq-Jcb"/>
+                                <include reference="vNT-aw-JKx"/>
+                                <include reference="ZQd-gh-AIo"/>
+                                <include reference="BTM-lL-Htv"/>
+                                <include reference="LsQ-Id-zV0"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="ans1Btn" destination="cyt-6l-hdk" id="EBy-lG-qE4"/>
+                        <outlet property="ans1Result" destination="vNT-aw-JKx" id="Zfr-rt-xuj"/>
+                        <outlet property="ans2Btn" destination="TTs-7J-t3d" id="raq-uA-IUH"/>
+                        <outlet property="ans2Result" destination="LsQ-Id-zV0" id="Qa8-Y3-GLg"/>
+                        <outlet property="ans3Btn" destination="8jv-P0-Wpb" id="yTN-UP-5fc"/>
+                        <outlet property="ans3Result" destination="ZQd-gh-AIo" id="vML-o5-KkP"/>
+                        <outlet property="ans4Btn" destination="WIV-36-5SW" id="CaW-ZA-2ci"/>
+                        <outlet property="ans4Result" destination="BTM-lL-Htv" id="J9p-O7-eKn"/>
+                        <outlet property="correctAnsInfo" destination="XqS-Qq-Jcb" id="lNi-J2-fDn"/>
+                        <outlet property="endGreeting" destination="x2u-CD-7je" id="eti-4e-DJa"/>
+                        <outlet property="quizDifficulty" destination="AiP-sW-F9g" id="JyW-Ki-qLs"/>
+                        <outlet property="quizLabelD" destination="X2R-ZI-Wws" id="AMK-lH-ryS"/>
+                        <outlet property="quizLabelN" destination="rV5-t2-rwI" id="RqM-fv-5ki"/>
+                        <outlet property="quizNumber" destination="Bwv-kR-qsW" id="fGA-mp-oju"/>
+                        <outlet property="quizSentence" destination="uvL-w3-ODf" id="rFT-9s-MOQ"/>
+                        <outlet property="startBtn" destination="9Sq-IH-9Nv" id="gP4-3y-WIT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

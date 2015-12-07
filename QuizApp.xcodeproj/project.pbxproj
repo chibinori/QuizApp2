@@ -13,6 +13,8 @@
 		9A2DB29E1C10393400438412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2DB29C1C10393400438412 /* Main.storyboard */; };
 		9A2DB2A01C10393400438412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2DB29F1C10393400438412 /* Assets.xcassets */; };
 		9A2DB2A31C10393400438412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2DB2A11C10393400438412 /* LaunchScreen.storyboard */; };
+		9A2DB2AC1C15875100438412 /* maru.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9A2DB2AA1C15875100438412 /* maru.gif */; };
+		9A2DB2AD1C15875100438412 /* batsu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9A2DB2AB1C15875100438412 /* batsu.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9A2DB29F1C10393400438412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A2DB2A21C10393400438412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A2DB2A41C10393400438412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2DB2AA1C15875100438412 /* maru.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = maru.gif; sourceTree = "<group>"; };
+		9A2DB2AB1C15875100438412 /* batsu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batsu.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		9A2DB2931C10393400438412 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A2DB2AA1C15875100438412 /* maru.gif */,
+				9A2DB2AB1C15875100438412 /* batsu.gif */,
 				9A2DB2941C10393400438412 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -137,8 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2DB2A31C10393400438412 /* LaunchScreen.storyboard in Resources */,
+				9A2DB2AC1C15875100438412 /* maru.gif in Resources */,
 				9A2DB2A01C10393400438412 /* Assets.xcassets in Resources */,
 				9A2DB29E1C10393400438412 /* Main.storyboard in Resources */,
+				9A2DB2AD1C15875100438412 /* batsu.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
