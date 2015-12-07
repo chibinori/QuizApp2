@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 // クイズの問題数
 static const NSInteger kMaxQuizNum = 5;
@@ -38,6 +39,9 @@ static const NSInteger kQuizSelectionNum = 4;
     UIImage* incorrectImage;
 }
 
+@property (strong, nonatomic) AVAudioPlayer *correctPlayer;
+@property (strong, nonatomic) AVAudioPlayer *incorrectPlayer;
+
 @end
 
 @implementation ViewController
@@ -53,6 +57,25 @@ static const NSInteger kQuizSelectionNum = 4;
     
     correctImage = [UIImage imageNamed:@"maru.gif"];
     incorrectImage = [UIImage imageNamed:@"batsu.gif"];
+    
+    //正解音のプレイヤーを作成
+    NSError *error = nil;
+    NSBundle *correctBundle = [NSBundle mainBundle];
+    NSString *correctSoundPath = [correctBundle pathForResource:@"Correct" ofType:@"mp3"];
+    NSURL *correctSoundUrl = [NSURL fileURLWithPath:correctSoundPath];
+    self.correctPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:correctSoundUrl error:&error];
+    if (error != nil) { //エラーがあった場合
+        return;
+    }
+    
+    //不正解音のプレイヤーを作成
+    NSBundle *incorrectBundle = [NSBundle mainBundle];
+    NSString *incorrectSoundPath = [incorrectBundle pathForResource:@"Wrong" ofType:@"mp3"];
+    NSURL *incorrectSoundUrl = [NSURL fileURLWithPath:incorrectSoundPath];
+    self.incorrectPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:incorrectSoundUrl error:&error];
+    if (error != nil) { //エラーがあった場合
+        return;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -196,7 +219,7 @@ static const NSInteger kQuizSelectionNum = 4;
     
     NSString *ansInfoStr =
     [NSString stringWithFormat:@"%ld問中、%ld問正解しました",
-     kMaxQuizNum, (long)correctAnsCount];
+     (long)kMaxQuizNum, (long)correctAnsCount];
     self.correctAnsInfo.text = ansInfoStr;
     
     self.endGreeting.hidden = NO;
@@ -312,6 +335,9 @@ static const NSInteger kQuizSelectionNum = 4;
     NSString *correctAnswer = [currentAnsArray firstObject];
     if ([button.currentTitle isEqualToString:correctAnswer]) {
         correctAnsCount++;
+        [self.correctPlayer play];
+    } else {
+        [self.incorrectPlayer play];
     }
 
     // マル・バツ表示
@@ -378,7 +404,7 @@ static const NSInteger kQuizSelectionNum = 4;
                                             }
                                             
                                             // 通信が正常終了したときの処理
-                                            NSLog(@"statusCode = %ld", ((NSHTTPURLResponse *)response).statusCode);
+                                            NSLog(@"statusCode = %ld", (long)((NSHTTPURLResponse *)response).statusCode);
                                             if (((NSHTTPURLResponse *)response).statusCode != 200) {
                                                 dispatch_async(dispatch_get_main_queue(), ^{
                                                     [self prepareStart];
