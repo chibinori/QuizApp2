@@ -14,7 +14,7 @@ static const NSInteger kMaxQuizNum = 5;
 static const NSInteger kQuizSelectionNum = 4;
 
 
-@interface ViewController (){
+@interface ViewController () <NSXMLParserDelegate> {
     // 現在何問めか？
     NSInteger currentQuizNum;
     // 正答数
